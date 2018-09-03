@@ -7,6 +7,7 @@ def solution(str1, str2):
     str1_list = list(filter(lambda s: p.match(s), str1))
     str1_list_len = len(str1_list)
     str1_set = {s.lower() for s in str1_list}
+    print(str1_set)
     str1_data_len = str1_list_len - len(str1_set)
 
     str2 = [str2[0 + i:2 + i] for i in range(len(str2) - 1)]
