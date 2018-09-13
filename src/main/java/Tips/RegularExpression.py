@@ -87,3 +87,8 @@ p.sub('colour', 'blue socks and red shoes', count=1)
 # ? 사용시
 # >>> print(re.match('<.*?>', s).group())
 # <html>
+
+
+# -------그룹---------------------
+# (?P<그룹명>...)
+# (?P=그룹명)   # 재참조시

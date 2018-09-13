@@ -39,9 +39,9 @@ bin(3)  # 2진수
 # '0b10'
 format(3, 'b')  # or   f'{3:#b}'  or  f'{3:b}'
 # '10'
-oct(34)  # 8진수
+oct(34)  # 8진수 : format = o
 # '0o42'
-hex(234)  # 16진
+hex(234)  # 16진 : format = x 소문자로 반환, X 대문자로 반환
 # '0xea'
 int('11', 2)
 # 3
@@ -53,3 +53,18 @@ round(4.6)
 # 대소문자
 "hi".upper()
 "HI".lower()
+
+
+def average(values):
+    if len(values) == 0:
+        return None
+    return sum(values, 0.0) / len(values)
+
+
+def mul(values):
+    if len(values) == 0:
+        return None
+    m = 1
+    for i in values:
+        m *= i
+    return m
