@@ -42,3 +42,5 @@ heapq.heappush(a, 4)
 # 힙의 0 인덱스에 접근하면 항상 가장 작은 아이템을 반환
 # a[0] == heapq.nsmallest(1,a)[0]  # 같음
 
+# -------------------------
+from queue import PriorityQueue
